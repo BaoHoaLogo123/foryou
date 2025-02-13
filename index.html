@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel='shortcut icon' href='love.ico' />
-    <iframe src="https://www.youtuberepeater.com/watch?v=kPhpHvnnn0Q#gsc.tab=0" allow="autoplay" style="display:none" id="iframeAudio">
+
     </iframe> 
 
 </head>
@@ -15,7 +15,18 @@
     <h1>Happy Valentine's Day, My Love 💖</h1>
     <button id="secretButton">Bấm vô đây nha, bấm nhiều lên nha 💌</button>
     <p id="message">You are the best thing that ever happened to me! I love you! 💕</p>
+    <button id="playMusicButton" onclick="playMusic()">Bật nhạc nền 🎵</button>
 
+    <audio id="background-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ âm thanh.
+    </audio>
+
+    <script>
+        function playMusic() {
+            document.getElementById('background-music').play();
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
