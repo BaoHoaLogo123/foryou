@@ -51,6 +51,21 @@ h1 {
 #secretButton:active {
     transform: scale(0.9);
 }
+#scrollingText {
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: #ff4b5c;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ff99ac;
+    animation: scrollUp 15s linear infinite;
+}
+@keyframes scrollUp {
+    from { bottom: -100px; }
+    to { bottom: 100vh; }
+}
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 28px;
@@ -64,5 +79,26 @@ h1 {
     }
     .heart {
         font-size: 16px;
+    }
+    #scrollingText {
+        font-size: 18px;
+    }
+}
+
+.explode-heart {
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    animation: explode 0.8s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2) translate(var(--x), var(--y));
+        opacity: 0;
     }
 }
