@@ -30,7 +30,9 @@ document.getElementById("secretButton").addEventListener("click", function () {
         "Ngày nào cũng xinh tươi như bông hoa 🌹",
         "Và chúc m sẽ luôn luôn thành công trong cuộc sống 💖",
         "Sẽ thực hiện được ước mơ sau này 🍀",
-        "Cuối cùng là đừng bao giờ từ bỏ hay chùn bước trc khó khăn đấy nhé 🥇"
+        "Cuối cùng là đừng bao giờ từ bỏ hay chùn bước trc khó khăn đấy nhé 🥇",
+        "I love you in every universe 😟😥",
+        "Edit: 18/3/2025"
     ];
     
     let index = parseInt(localStorage.getItem("messageIndex")) || 0;
